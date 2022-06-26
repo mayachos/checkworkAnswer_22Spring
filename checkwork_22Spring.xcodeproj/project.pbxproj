@@ -13,6 +13,8 @@
 		637A3FA12867BF3400358C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637A3F9F2867BF3400358C7C /* Main.storyboard */; };
 		637A3FA32867BF3500358C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 637A3FA22867BF3500358C7C /* Assets.xcassets */; };
 		637A3FA62867BF3500358C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637A3FA42867BF3500358C7C /* LaunchScreen.storyboard */; };
+		637A3FB12867DB5500358C7C /* misaki_gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 637A3FB02867DB5500358C7C /* misaki_gothic.ttf */; };
+		637A3FB32867DE7B00358C7C /* SaveDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637A3FB22867DE7B00358C7C /* SaveDataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		637A3FA22867BF3500358C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		637A3FA52867BF3500358C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		637A3FA72867BF3500358C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		637A3FB02867DB5500358C7C /* misaki_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = misaki_gothic.ttf; sourceTree = "<group>"; };
+		637A3FB22867DE7B00358C7C /* SaveDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +63,23 @@
 				637A3F992867BF3400358C7C /* AppDelegate.swift */,
 				637A3F9B2867BF3400358C7C /* SceneDelegate.swift */,
 				637A3F9D2867BF3400358C7C /* ViewController.swift */,
+				637A3FB22867DE7B00358C7C /* SaveDataViewController.swift */,
 				637A3F9F2867BF3400358C7C /* Main.storyboard */,
+				637A3FAF2867DB5500358C7C /* Fonts */,
 				637A3FA22867BF3500358C7C /* Assets.xcassets */,
 				637A3FA42867BF3500358C7C /* LaunchScreen.storyboard */,
 				637A3FA72867BF3500358C7C /* Info.plist */,
 			);
 			path = checkwork_22Spring;
+			sourceTree = "<group>";
+		};
+		637A3FAF2867DB5500358C7C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				637A3FB02867DB5500358C7C /* misaki_gothic.ttf */,
+			);
+			name = Fonts;
+			path = ../../../../Downloads/TechMon_Resource/Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637A3FB12867DB5500358C7C /* misaki_gothic.ttf in Resources */,
 				637A3FA62867BF3500358C7C /* LaunchScreen.storyboard in Resources */,
 				637A3FA32867BF3500358C7C /* Assets.xcassets in Resources */,
 				637A3FA12867BF3400358C7C /* Main.storyboard in Resources */,
@@ -140,6 +156,7 @@
 				637A3F9E2867BF3400358C7C /* ViewController.swift in Sources */,
 				637A3F9A2867BF3400358C7C /* AppDelegate.swift in Sources */,
 				637A3F9C2867BF3400358C7C /* SceneDelegate.swift in Sources */,
+				637A3FB32867DE7B00358C7C /* SaveDataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

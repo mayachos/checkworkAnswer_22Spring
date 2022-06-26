@@ -1,24 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="misaki_gothic.ttf">
+            <string>MisakiGothic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="checkwork_22Spring" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="武器" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPy-O8-kLl">
+                                <rect key="frame" x="67" y="194" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Aku-8G-b1D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盾" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1B-fe-zc0">
+                                <rect key="frame" x="227" y="194" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="cJx-rL-N7e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="防具" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grq-Jy-J60">
+                                <rect key="frame" x="67" y="345" width="120" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="mbr-2Q-f8h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="防具" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gje-5w-XpV">
+                                <rect key="frame" x="109.5" y="379" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アクセサリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qn9-V6-EGM">
+                                <rect key="frame" x="197" y="345" width="180" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="B6R-bW-wbM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アクセサリー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSF-tI-t40">
+                                <rect key="frame" x="235" y="377" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VA4-hX-b8w">
+                                <rect key="frame" x="135" y="550" width="144" height="48"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="36"/>
+                                <state key="normal" title="入れ替え">
+                                    <color key="titleColor" systemColor="systemTealColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="change" destination="BYZ-38-t0r" eventType="touchUpInside" id="flY-vx-9Hk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7t-Kg-1bN">
+                                <rect key="frame" x="174" y="694" width="68" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="34"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="save" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGn-va-Vo8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tg7-Gj-KZC">
+                                <rect key="frame" x="135" y="618" width="144" height="48"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="36"/>
+                                <state key="normal" title="ランダム">
+                                    <color key="titleColor" systemColor="systemTealColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="random" destination="BYZ-38-t0r" eventType="touchUpInside" id="FZP-pK-6nS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="武器" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcV-4b-zTJ">
+                                <rect key="frame" x="109.5" y="234" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盾" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRt-Dy-hys">
+                                <rect key="frame" x="278" y="234" width="18" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="武器セットガチャ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFO-ay-TNN">
+                                <rect key="frame" x="63" y="74" width="288" height="36"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ec-3v-e2n">
+                                <rect key="frame" x="204" y="805" width="180" height="32"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
+                                <state key="normal" title="前回保存したセット"/>
+                                <connections>
+                                    <segue destination="Agh-Ka-UU8" kind="show" id="gvV-9A-MQ0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="JFO-ay-TNN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0yr-eZ-Qsg"/>
+                            <constraint firstItem="EcV-4b-zTJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="28q-2y-gpP"/>
+                            <constraint firstItem="MRt-Dy-hys" firstAttribute="top" secondItem="N1B-fe-zc0" secondAttribute="bottom" constant="10" id="2EL-At-OUn"/>
+                            <constraint firstItem="JFO-ay-TNN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="2SJ-z1-6sY"/>
+                            <constraint firstItem="gje-5w-XpV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="32b-SP-RO9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Ec-3v-e2n" secondAttribute="bottom" constant="25" id="3eE-GI-K4h"/>
+                            <constraint firstItem="N1B-fe-zc0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="8Vn-3K-Y7b"/>
+                            <constraint firstItem="gje-5w-XpV" firstAttribute="top" secondItem="grq-Jy-J60" secondAttribute="bottom" constant="10" id="Cv8-Pj-six"/>
+                            <constraint firstItem="Qn9-V6-EGM" firstAttribute="top" secondItem="MRt-Dy-hys" secondAttribute="bottom" constant="90" id="Ejs-2s-iMb"/>
+                            <constraint firstItem="MRt-Dy-hys" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="I5D-fG-PSo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Ec-3v-e2n" secondAttribute="trailing" constant="30" id="IsY-o5-Qgc"/>
+                            <constraint firstItem="grq-Jy-J60" firstAttribute="top" secondItem="EcV-4b-zTJ" secondAttribute="bottom" constant="90" id="Ovf-qH-JM2"/>
+                            <constraint firstItem="zPy-O8-kLl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="PzI-8I-ftB"/>
+                            <constraint firstItem="tg7-Gj-KZC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WxB-9r-eoW"/>
+                            <constraint firstItem="VA4-hX-b8w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZOb-EX-zIJ"/>
+                            <constraint firstItem="tg7-Gj-KZC" firstAttribute="top" secondItem="VA4-hX-b8w" secondAttribute="bottom" constant="20" id="f0y-bL-D5n"/>
+                            <constraint firstItem="jSF-tI-t40" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="gpm-nX-rhk"/>
+                            <constraint firstItem="grq-Jy-J60" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="hcR-5k-D2E"/>
+                            <constraint firstItem="Qn9-V6-EGM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="nou-Zt-L5f"/>
+                            <constraint firstItem="zPy-O8-kLl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="oRU-ZF-LZO"/>
+                            <constraint firstItem="EcV-4b-zTJ" firstAttribute="top" secondItem="zPy-O8-kLl" secondAttribute="bottom" constant="10" id="pfZ-gF-tNh"/>
+                            <constraint firstItem="N1B-fe-zc0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="v5V-Ae-6Ah"/>
+                            <constraint firstItem="jSF-tI-t40" firstAttribute="top" secondItem="Qn9-V6-EGM" secondAttribute="bottom" constant="10" id="xmT-xp-hvM"/>
+                            <constraint firstItem="VA4-hX-b8w" firstAttribute="top" secondItem="gje-5w-XpV" secondAttribute="bottom" constant="150" id="zLs-OQ-OgO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="accessoryLabel" destination="Qn9-V6-EGM" id="m98-Y8-Nh5"/>
+                        <outlet property="boguLabel" destination="grq-Jy-J60" id="TRd-Ek-NAi"/>
+                        <outlet property="bukiLabel" destination="zPy-O8-kLl" id="Ogp-yj-tG2"/>
+                        <outlet property="tateLabel" destination="N1B-fe-zc0" id="HOd-qt-FNh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="80.357142857142847"/>
+        </scene>
+        <!--Save Data View Controller-->
+        <scene sceneID="pg1-PY-sBA">
+            <objects>
+                <viewController id="Agh-Ka-UU8" customClass="SaveDataViewController" customModule="checkwork_22Spring" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YDD-PI-aHe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="武器" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEb-0Y-8DN">
+                                <rect key="frame" x="186.5" y="30" width="41" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="武器名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AE5-t4-4Iv">
+                                <rect key="frame" x="156" y="64" width="102" height="34"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盾" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBS-7T-3Hi">
+                                <rect key="frame" x="196.5" y="148" width="21" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="防具" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4M-v6-sYX">
+                                <rect key="frame" x="186.5" y="266" width="41" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盾名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcY-Qt-e5D">
+                                <rect key="frame" x="173" y="182" width="68" height="34"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="防具名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSW-QT-rNa">
+                                <rect key="frame" x="156" y="300" width="102" height="34"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アクセサリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRM-jT-hjf">
+                                <rect key="frame" x="145.5" y="384" width="123" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCp-6v-UK1">
+                                <rect key="frame" x="180.5" y="664" width="53" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="back" destination="Agh-Ka-UU8" eventType="touchUpInside" id="ihG-Ev-pRj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アクセサリー名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOJ-ox-csR">
+                                <rect key="frame" x="88" y="418" width="238" height="34"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pCL-7U-Tbh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AE5-t4-4Iv" firstAttribute="centerX" secondItem="YDD-PI-aHe" secondAttribute="centerX" id="0le-Dr-LhC"/>
+                            <constraint firstItem="jRM-jT-hjf" firstAttribute="centerX" secondItem="YDD-PI-aHe" secondAttribute="centerX" id="92Q-k8-Hid"/>
+                            <constraint firstItem="AE5-t4-4Iv" firstAttribute="top" secondItem="hEb-0Y-8DN" secondAttribute="bottom" constant="10" id="GKZ-Lt-kQ2"/>
+                            <constraint firstItem="M4M-v6-sYX" firstAttribute="top" secondItem="WcY-Qt-e5D" secondAttribute="bottom" constant="50" id="IdP-yM-dlU"/>
+                            <constraint firstItem="lBS-7T-3Hi" firstAttribute="centerX" secondItem="YDD-PI-aHe" secondAttribute="centerX" id="Irg-MZ-7Eo"/>
+                            <constraint firstItem="pSW-QT-rNa" firstAttribute="top" secondItem="M4M-v6-sYX" secondAttribute="bottom" constant="10" id="KOt-SW-AWU"/>
+                            <constraint firstItem="WcY-Qt-e5D" firstAttribute="top" secondItem="lBS-7T-3Hi" secondAttribute="bottom" constant="10" id="Q8G-jg-dpW"/>
+                            <constraint firstItem="pCL-7U-Tbh" firstAttribute="bottom" secondItem="LCp-6v-UK1" secondAttribute="bottom" constant="100" id="Qe1-uF-6w9"/>
+                            <constraint firstItem="LCp-6v-UK1" firstAttribute="centerX" secondItem="YDD-PI-aHe" secondAttribute="centerX" id="RMh-uO-KfY"/>
+                            <constraint firstItem="hEb-0Y-8DN" firstAttribute="top" secondItem="pCL-7U-Tbh" secondAttribute="top" constant="30" id="SBE-UY-n2O"/>
+                            <constraint firstItem="WcY-Qt-e5D" firstAttribute="centerX" secondItem="YDD-PI-aHe" secondAttribute="centerX" id="YPm-d8-S7e"/>
+                            <constraint firstItem="pSW-QT-rNa" firstAttribute="centerX" secondItem="YDD-PI-aHe" secondAttribute="centerX" id="cya-FA-fGh"/>
+                            <constraint firstItem="M4M-v6-sYX" firstAttribute="centerX" secondItem="YDD-PI-aHe" secondAttribute="centerX" id="dn1-PA-Kwm"/>
+                            <constraint firstItem="hEb-0Y-8DN" firstAttribute="centerX" secondItem="YDD-PI-aHe" secondAttribute="centerX" id="rWt-fC-Vej"/>
+                            <constraint firstItem="uOJ-ox-csR" firstAttribute="top" secondItem="jRM-jT-hjf" secondAttribute="bottom" constant="10" id="rmm-ep-N8C"/>
+                            <constraint firstItem="lBS-7T-3Hi" firstAttribute="top" secondItem="AE5-t4-4Iv" secondAttribute="bottom" constant="50" id="saO-0k-AOZ"/>
+                            <constraint firstItem="jRM-jT-hjf" firstAttribute="top" secondItem="pSW-QT-rNa" secondAttribute="bottom" constant="50" id="tvY-s4-L9Q"/>
+                            <constraint firstItem="uOJ-ox-csR" firstAttribute="centerX" secondItem="YDD-PI-aHe" secondAttribute="centerX" id="vVb-Ec-6Tz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vIc-JZ-ear"/>
+                    <connections>
+                        <outlet property="accessoryLabel" destination="uOJ-ox-csR" id="9rk-PR-AML"/>
+                        <outlet property="boguLabel" destination="pSW-QT-rNa" id="Xju-k1-QtO"/>
+                        <outlet property="bukiLabel" destination="AE5-t4-4Iv" id="9IM-9o-FDS"/>
+                        <outlet property="tateLabel" destination="WcY-Qt-e5D" id="nQW-WF-jmG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FMz-5H-akZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="80"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
